@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Rainbow Square</title>
+    <link rel="stylesheet" href=webpage.css>
+</head>
+
+<body>
+    <canvas id="canvas" width='1000' height='1000'></canvas>
+    
+    <script>
+          var square=function(){
+              var colors=['Red,','Orange','Yellow','Green','Blue','Purple'];
+              var color=Math.floor(Math.random()*6);
+              console.log(colors[color]);
+              var canvas=document.getElementById("canvas");
+              var ctx=canvas.getContext('2d');
+              ctx.fillStyle=colors[color];
+              ctx.fillRect(0,0,300,300)
+              
+              };
+          setInterval(square,1000);
+
+    </script>
+    <h2>More sites</h2>
+    <div class=links>
+        <p>math games</p>
+        <p>Homepage</p>
+    </div>
+    </body>
+</html>
